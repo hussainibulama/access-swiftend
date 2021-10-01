@@ -1,0 +1,235 @@
+$b-color: #282c34;
+$family: "Mulish", sans-serif;
+$f-color: #263238;
+.login-app {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: $b-color;
+  min-height: 100vh;
+}
+.log-arranger {
+  position: relative;
+  margin: 0 auto;
+}
+div.logo {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  padding-left: 3em;
+  cursor: pointer;
+  padding-bottom: 1em;
+}
+.imagetaker {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  padding-bottom: 1em;
+  align-items: center;
+}
+.imagetaker .imager video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+.imagetaker .imager img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+.imagetaker .imager {
+  position: relative;
+  border-radius: 50px;
+  background-color: #ccc;
+  box-shadow: #ee7e01;
+  width: 20em;
+  height: 15em;
+}
+.imagetaker button {
+  position: relative;
+  width: 50%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  height: 40px;
+  cursor: pointer !important;
+  font-family: $family;
+  font-style: normal;
+  font-weight: bold;
+  background: #26343b;
+  border-radius: 7px;
+  align-items: center;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+}
+span.counter {
+  position: absolute;
+  z-index: 100;
+  font-size: 5em;
+  color: #fff;
+  top: 0.1em;
+  right: 0em;
+  transition: top 2s;
+}
+span.counter:hover {
+  top: 0em;
+  transition: top 2s;
+}
+.double-button button {
+  width: 30% !important;
+}
+.double-button button.fade {
+  background-color: #ccc;
+  color: #000;
+}
+.double-button {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logo:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+.log-centralizer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 30%;
+  min-height: 100vh;
+  height: 100%;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
+.log-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 2em;
+  text-align: left;
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  font-family: $family;
+}
+h1.general {
+  font-family: $family;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-weight: 900;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  color: $f-color;
+}
+p.general {
+  font-family: $family;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: left;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  color: $f-color;
+}
+.login-input {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px !important;
+  font-family: $family;
+  outline: none;
+  background: #ffffff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-left: 15px;
+}
+.login-button {
+  position: relative;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  height: 40px;
+  cursor: pointer !important;
+  font-family: $family;
+  font-style: normal;
+  font-weight: bold;
+  background: #ee7e01;
+  border-radius: 7px;
+  align-items: center;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+}
+.navs {
+  position: relative;
+  font-family: "Mulish", sans-serif;
+  color: #263238;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  font-size: 14px;
+}
+.navs-right {
+  text-align: right;
+}
+.navs-center {
+  text-align: center;
+}
+.navs a {
+  color: #00a85a !important;
+  position: relative;
+  font-family: "Mulish", sans-serif;
+}
+.span-show {
+  position: absolute;
+  font-family: "Mulish", sans-serif;
+  color: $f-color;
+  margin-top: 1em;
+  right: 3em;
+  font-size: 12px;
+}
